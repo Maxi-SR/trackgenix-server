@@ -1,6 +1,7 @@
+import { Types } from 'mongoose';
 import SuperAdmins from '../models/Super-admins';
 
-const { ObjectId } = require('mongoose').Types;
+const { ObjectId } = Types;
 
 const error404 = (res, msg) => res.status(404).json({
   message: msg,

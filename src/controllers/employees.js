@@ -1,6 +1,7 @@
+import { Types } from 'mongoose';
 import Employees from '../models/Employees';
 
-const { ObjectId } = require('mongoose').Types;
+const { ObjectId } = Types;
 
 const getAllEmployees = async (req, res) => {
   try {

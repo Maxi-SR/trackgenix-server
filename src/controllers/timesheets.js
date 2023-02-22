@@ -1,6 +1,7 @@
+import { Types } from 'mongoose';
 import Timesheets from '../models/Timesheets';
 
-const { ObjectId } = require('mongoose').Types;
+const { ObjectId } = Types;
 
 const missingId = async (req, res) => res.status(400).json({
   message: 'Missing id parameter',

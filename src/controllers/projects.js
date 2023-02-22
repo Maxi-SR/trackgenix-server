@@ -1,7 +1,8 @@
+import { Types } from 'mongoose';
 import Projects from '../models/Projects';
 import Employees from '../models/Employees';
 
-const { ObjectId } = require('mongoose').Types;
+const { ObjectId } = Types;
 
 const error400 = (res, msg) => res.status(400).json({
   message: msg,

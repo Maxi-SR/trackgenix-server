@@ -1,6 +1,7 @@
+import { Types } from 'mongoose';
 import Admins from '../models/Admins';
 
-const { ObjectId } = require('mongoose').Types;
+const { ObjectId } = Types;
 
 const responseHandler = (res, statusCode, msg, data) => res.status(statusCode).json({
   message: msg,
