@@ -1,13 +1,14 @@
 /* eslint-disable no-console */
 import dotenv from 'dotenv';
-import mongoose from 'mongoose';
+import { MongoClient } from 'mongodb';
 import app from './app';
 
 dotenv.config();
 const { PORT, DATABASE_URL } = process.env;
 
-mongoose.connect(
-  DATABASE_URL,
+const client = new MongoClient(DATABASE_URL);
+
+client.connect(
   (error) => {
     if (error) {
       console.log('Fail connection to database', error);

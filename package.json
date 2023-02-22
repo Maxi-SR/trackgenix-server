@@ -1,12 +1,12 @@
 {
   "name": "backend-template",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "app_name is a system that provides Human Resources services to companies.",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "start":"node --experimental-specifier-resolution=node src/index.js",
+    "start": "node --experimental-specifier-resolution=node src/index.js",
     "dev": "nodemon --exec npm run babel-node -- src/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -31,6 +31,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.0",
     "joi": "^17.6.3",
+    "mongodb": "^5.0.1",
     "mongoose": "^6.6.5",
     "nodemon": "^2.0.15"
   },
